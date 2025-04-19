@@ -1,38 +1,50 @@
-🚗 Exercices PHP – POO : Voiture & VoitureÉlectrique
-Ce dépôt contient deux petits projets PHP orientés objet autour du concept de voiture, avec affichage HTML et un style CSS simple.
+# 🚗 Exercices PHP - Programmation Orientée Objet (POO)
 
-📁 Exercice 1 – Voiture
-Description :
-Dans ce premier exercice, une classe Voiture est définie avec les propriétés marque et modèle. Ces objets sont ensuite instanciés et affichés dynamiquement dans une page HTML stylisée.
+Ce dépôt contient deux exercices pratiques en PHP orienté objet autour du concept de **voitures**, permettant de comprendre la création de classes, l'héritage, et l'affichage d'objets via HTML/CSS.
 
-Fonctionnalités :
-Classe Voiture avec getters/setters
+---
 
-Méthode getInfos() pour afficher les détails
+## 📁 exerciceVoiture_1
 
-Affichage HTML + CSS basique (style.css)
+### Description :
+Création d'une classe `Voiture` contenant les propriétés `marque` et `modèle`. Les objets sont affichés dynamiquement dans une page web avec un style CSS simple.
 
-📁 Exercice 2 – Voiture + VoitureElec (Héritage)
-Description :
-Ce second exercice introduit l’héritage avec une classe VoitureElec qui hérite de Voiture et ajoute l’attribut autonomie. La méthode getInfos() est surchargée pour afficher à la fois les infos de la voiture et son autonomie.
+### Fonctionnalités :
+- Classe `Voiture` avec constructeurs, getters et setters
+- Méthode `getInfos()` pour afficher les détails
+- Affichage HTML et mise en forme via `style.css`
 
-Fonctionnalités :
-Classe Voiture (identique à l’exo 1)
+---
 
-Classe VoitureElec héritée avec une autonomie
+## 📁 exerciceVoiture_2
 
-Appel à parent::getInfos() pour conserver l’affichage de la classe parente
+### Description :
+Extension du premier exercice avec une classe `VoitureElec` qui hérite de `Voiture` et introduit l'attribut `autonomie`. La méthode `getInfos()` est surchargée pour ajouter les données spécifiques à l’électrique.
 
-Page HTML et CSS réutilisés
+### Fonctionnalités :
+- Héritage de la classe `Voiture`
+- Nouvelle propriété `autonomie`
+- Appel à `parent::getInfos()` pour réutiliser l’affichage de la classe mère
 
-🖥️ Comment exécuter
-Place chaque projet dans son propre dossier.
+---
 
-Lancer un serveur local (XAMPP, Laragon, etc.).
+## 💻 Lancer le projet
 
-Ouvre index.php via localhost.
+1. Cloner le dépôt dans votre serveur local.
+2. Lancer un serveur PHP (XAMPP, WAMP, etc.).
+3. Accéder aux fichiers `index.php` via `localhost`.
 
-📁 Structure du dépôt
+---
+
+## 🎨 Style
+
+Les deux exercices utilisent un fichier `style.css` pour un rendu propre, centré et lisible avec classes `.container` et `.voiture`.
+
+---
+
+## 📂 Structure
+
+```
 .
 ├── exerciceVoiture_1
 │   ├── index.php
@@ -44,3 +56,13 @@ Ouvre index.php via localhost.
 │   ├── Voiture.php
 │   └── style.css
 └── README.md
+```
+
+---
+
+## 🎯 Objectifs pédagogiques
+
+- Maîtriser la création et l’utilisation de classes en PHP
+- Comprendre les principes d’héritage
+- Savoir afficher des objets dans une page HTML
+- Styliser le rendu avec du CSS simple
